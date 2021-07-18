@@ -40,7 +40,7 @@ export default function About() {
               National University of Colombia
             </a>{" "}
             where I studied <strong>Systems Engineer</strong> with an emphasis
-            in Networking (yes, I&apos;m a big fan of the internet🤷‍♂️). I
+            in Networking (yes, I&apos;m a big fan of the internet 🤷‍♂️). I
             didn&apos;t graduate and probably never will since I already learned
             the topics that would make a difference in my career (OOP, FP, data
             structures, and compilers). Also, today companies don&apos;t require
@@ -50,7 +50,7 @@ export default function About() {
             After deciding to focus on learning everything related to front-end
             development (I used{" "}
             <a href="https://roadmap.sh/frontend">this roadmap</a> to track the
-            topics I needed to learn) I spent almost 3 months learning
+            topics I needed to learn), I spent almost 3 months learning
             everything from HTML up to ReactJS. Finally, I got my first job in
             May 2020 at <a href="https://fluidattacks.com/">Fluid Attacks</a>.
             <p>
@@ -59,10 +59,11 @@ export default function About() {
                 <li>Something didn&apos;t click immediately.</li>
                 <li>
                   I forgot about something I supposedly learned a week before.
+                  😕
                 </li>
                 <li>
                   Sometimes it was just that the topic was too difficult to wrap
-                  your head around it.
+                  my head around it.
                 </li>
               </ul>
               My advice if you&apos;re having the same difficulties is to take{" "}

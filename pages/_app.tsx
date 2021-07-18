@@ -44,16 +44,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       <main className="px-1 md:px-2">
         <Component {...pageProps} />
       </main>
-      <footer className="pt-20 pb-12 flex flex-col items-center gap-y-5 justify-between">
-        <p>@ 2020 Workflow, Inc. All rights reserved.</p>
-        <div className="flex gap-x-5 order-first">
-          <a href={SocialNetworks.twitter}>
+      <footer className="pt-20 pb-12 flex flex-col items-center gap-y-5 md:flex-row md:justify-between">
+        <p className="text-center">© 2020 Andres Lemus. All rights reserved.</p>
+        <div className="flex gap-x-5 order-first md:order-last">
+          <a href={SocialNetworks.twitter} className="hover:text-green-300">
             <AiOutlineTwitter className="h-6 w-6" />
           </a>
-          <a href={SocialNetworks.github}>
+          <a href={SocialNetworks.github} className="hover:text-green-300">
             <AiOutlineGithub className="h-6 w-6 " />
           </a>
-          <a href={SocialNetworks.linkedin}>
+          <a href={SocialNetworks.linkedin} className="hover:text-green-300">
             <AiFillLinkedin className="h-6 w-6" />
           </a>
         </div>
