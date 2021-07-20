@@ -1,7 +1,7 @@
 import { cloneElement } from "react";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/dist/client/router";
-import { classNames } from "@utils/index";
+import { classNames } from "@utils/formatters";
 
 type NavLinkProps = {
   baseClassName?: string;

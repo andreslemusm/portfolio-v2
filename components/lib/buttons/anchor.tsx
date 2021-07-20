@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import { ButtonBaseProps, appearances, buttonSizes } from "./common";
 import Link, { LinkProps } from "next/link";
-import { classNames } from "@utils/index";
+import { classNames } from "@utils/formatters";
 
 type AnchorProps = Pick<LinkProps, "href"> & ButtonBaseProps;
 

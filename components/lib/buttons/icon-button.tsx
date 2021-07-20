@@ -32,7 +32,7 @@ const IconButton = forwardRef(
         iconButtonSizes[size]
       } ${appearances[appearance][0]} ${
         appearances[appearance][1][status]
-      } transition-colors inline-flex items-center border focus:outline-none focus:ring-2 focus:ring-primary-300`}
+      } transition-colors inline-flex items-center border focus:outline-none focus:ring-2 focus:ring-green-300`}
     >
       {status === "loading" ? (
         <AiOutlineLoading3Quarters

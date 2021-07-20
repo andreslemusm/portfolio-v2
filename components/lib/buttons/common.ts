@@ -7,20 +7,12 @@ const appearances = {
       disabled: "opacity-50 cursor-not-allowed",
     },
   ],
-  ghost: [
+  secondary: [
     "border-transparent text-green-300",
     {
       default: "hover:text-green-400 hover:bg-green-300 hover:bg-opacity-5",
       loading: "opacity-80 cursor-default",
       disabled: "opacity-60 cursor-not-allowed",
-    },
-  ],
-  link: [
-    "border-transparent text-white",
-    {
-      default: "hover:text-green-300",
-      loading: "opacity-70 cursor-default",
-      disabled: "opacity-50 cursor-not-allowed",
     },
   ],
 } as const;
