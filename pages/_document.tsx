@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import brandIcon from "@assets/brand-icon.svg";
 
 class MyDocument extends Document {
   render() {
@@ -7,7 +6,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
             rel="stylesheet"
           />
           <link rel="icon" type="image/svg" href="/favicon.svg" />
