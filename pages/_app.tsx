@@ -14,7 +14,7 @@ import { SocialNetworks } from "@utils/constants";
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
-const navItems = ["about", "blog"];
+const navItems = ["home", "about", "blog"];
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -265,7 +265,7 @@ const App = ({ Component, pageProps }: AppProps) => {
                     static
                     className="absolute top-0 inset-x-0 z-20 p-2 transition transform origin-top-right"
                   >
-                    <div className="rounded-lg shadow-md bg-gray-700 ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div className="rounded-lg shadow-md bg-gray-800 ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="px-5 pt-4 flex items-center justify-between">
                         <div>
                           <Brand className="h-8 w-auto" />
@@ -279,23 +279,19 @@ const App = ({ Component, pageProps }: AppProps) => {
                           </Popover.Button>
                         </div>
                       </div>
-                      <div className="px-2 pt-2 pb-3 space-y-1">
+                      <div className="my-5 px-2 space-y-1">
                         {navItems.map((item) => (
-                          <a
+                          <NavLink
                             key={item}
-                            href={item}
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            href={item === "home" ? "/" : `/${item}`}
+                            baseClassName="block px-2 py-2 text-sm font-medium rounded-md capitalize"
+                            activeClassName="bg-gray-900 text-white"
+                            inactiveClassName="text-gray-300 hover:bg-gray-700 hover:text-white"
                           >
-                            {item}
-                          </a>
+                            <a>{item}</a>
+                          </NavLink>
                         ))}
                       </div>
-                      <a
-                        href="#"
-                        className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                      >
-                        Log in
-                      </a>
                     </div>
                   </Popover.Panel>
                 </Transition>
@@ -307,7 +303,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           {navItems.map((navItem) => (
             <NavLink
               key={navItem}
-              href={`/${navItem}`}
+              href={navItem === "home" ? "/" : `/${navItem}`}
               baseClassName="transition-colors items-center justify-center border font-medium inline-flex rounded-sm text-sm capitalize leading-4 px-3 py-2 border-transparent focus:outline-none focus:ring-2 focus:ring-green-300"
               activeClassName="text-green-300"
               inactiveClassName="text-white hover:text-green-300"
