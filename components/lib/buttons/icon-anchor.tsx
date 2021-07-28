@@ -28,7 +28,7 @@ const IconAnchor = forwardRef(
           iconButtonSizes[size]
         } ${appearances[appearance][0]} ${
           appearances[appearance][1]["default"]
-        } transition-colors inline-flex items-center border focus:outline-none focus:ring-2 focus:ring-primary-300`}
+        } transition inline-flex items-center border focus:outline-none focus:ring-2 focus:ring-primary-300`}
       >
         <Icon className={size === "lg" ? "h-6 w-6" : "h-5 w-5"} />
       </a>

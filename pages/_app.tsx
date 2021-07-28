@@ -237,74 +237,66 @@ const App = ({ Component, pageProps }: AppProps) => {
         </Link>
 
         {/* Navigation */}
-        <div className="md:hidden">
-          <Popover>
-            {({ open }) => (
-              <Fragment>
-                <Popover.Button as={Fragment}>
-                  <IconButton
-                    icon={HiOutlineMenu}
-                    aria-label="Open navigation menu"
-                    appearance="secondary"
-                    size="lg"
-                  />
-                </Popover.Button>
+        <Popover as="div" className="md:hidden">
+          <Popover.Button as={Fragment}>
+            <IconButton
+              icon={HiOutlineMenu}
+              aria-label="Open navigation menu"
+              appearance="secondary"
+              size="lg"
+            />
+          </Popover.Button>
 
-                <Transition
-                  show={open}
-                  as={Fragment}
-                  enter="duration-150 ease-out"
-                  enterFrom="opacity-0 scale-95"
-                  enterTo="opacity-100 scale-100"
-                  leave="duration-100 ease-in"
-                  leaveFrom="opacity-100 scale-100"
-                  leaveTo="opacity-0 scale-95"
-                >
-                  <Popover.Panel
-                    focus
-                    static
-                    className="absolute top-0 inset-x-0 z-20 p-2 transition transform origin-top-right"
-                  >
-                    <div className="rounded-lg shadow-md bg-gray-800 ring-1 ring-black ring-opacity-5 overflow-hidden">
-                      <div className="px-5 pt-4 flex items-center justify-between">
-                        <div>
-                          <Brand className="h-8 w-auto" />
-                        </div>
-                        <div className="-mr-2">
-                          <Popover.Button as={Fragment}>
-                            <IconButton
-                              icon={HiX}
-                              aria-label="Close navigation menu"
-                            />
-                          </Popover.Button>
-                        </div>
-                      </div>
-                      <div className="my-5 px-2 space-y-1">
-                        {navItems.map((item) => (
-                          <NavLink
-                            key={item}
-                            href={item === "home" ? "/" : `/${item}`}
-                            baseClassName="block px-2 py-2 text-sm font-medium rounded-md capitalize"
-                            activeClassName="bg-gray-900 text-white"
-                            inactiveClassName="text-gray-300 hover:bg-gray-700 hover:text-white"
-                          >
-                            <a>{item}</a>
-                          </NavLink>
-                        ))}
-                      </div>
-                    </div>
-                  </Popover.Panel>
-                </Transition>
-              </Fragment>
-            )}
-          </Popover>
-        </div>
+          <Transition
+            as={Fragment}
+            enter="duration-150 ease-out"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="duration-100 ease-in"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+            <Popover.Panel
+              focus
+              className="absolute top-0 inset-x-0 z-20 p-2 transition transform origin-top-right"
+            >
+              <div className="rounded-lg shadow-md bg-gray-800 ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div className="px-5 pt-4 flex items-center justify-between">
+                  <div>
+                    <Brand className="h-8 w-auto" />
+                  </div>
+                  <div className="-mr-2">
+                    <Popover.Button as={Fragment}>
+                      <IconButton
+                        icon={HiX}
+                        aria-label="Close navigation menu"
+                      />
+                    </Popover.Button>
+                  </div>
+                </div>
+                <div className="my-5 px-2 space-y-1">
+                  {navItems.map((item) => (
+                    <NavLink
+                      key={item}
+                      href={item === "home" ? "/" : `/${item}`}
+                      baseClassName="transition block px-2 py-2 text-sm font-medium rounded-md capitalize"
+                      activeClassName="bg-gray-900 text-white"
+                      inactiveClassName="text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                      <a>{item}</a>
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
+            </Popover.Panel>
+          </Transition>
+        </Popover>
         <div className="hidden md:flex gap-x-5 items-center">
           {navItems.map((navItem) => (
             <NavLink
               key={navItem}
               href={navItem === "home" ? "/" : `/${navItem}`}
-              baseClassName="transition-colors items-center justify-center border font-medium inline-flex rounded-sm text-sm capitalize leading-4 px-3 py-2 border-transparent focus:outline-none focus:ring-2 focus:ring-green-300"
+              baseClassName="transition items-center justify-center border font-medium inline-flex rounded-sm text-sm capitalize leading-4 px-3 py-2 border-transparent focus:outline-none focus:ring-2 focus:ring-green-300"
               activeClassName="text-green-300"
               inactiveClassName="text-white hover:text-green-300"
             >

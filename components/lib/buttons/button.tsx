@@ -1,6 +1,7 @@
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { forwardRef } from "react";
 import { ButtonBaseProps, appearances, buttonSizes } from "./common";
+import { classNames } from "@utils/formatters";
 
 type ButtonProps = {
   type?: "submit" | "button" | "reset";
@@ -8,9 +9,6 @@ type ButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 } & ButtonBaseProps;
 
-/**
- * @param {string} width TailwindCSS width utility class
- */
 const Button = forwardRef(
   (
     {
@@ -32,15 +30,21 @@ const Button = forwardRef(
       ref={ref}
       onClick={onClick}
       disabled={status === "default" ? false : true}
-      className={`${block ? "flex w-full" : "inline-flex"} ${
-        rounded ? "rounded-full" : "rounded-sm"
-      } ${buttonSizes[size][0]} ${appearances[appearance][0]} ${
-        appearances[appearance][1][status]
-      } transition-colors items-center justify-center border font-medium focus:outline-none focus:ring-2 focus:ring-primary-300`}
+      className={classNames(
+        block ? "flex w-full" : "inline-flex",
+        rounded ? "rounded-full" : "rounded-sm",
+        buttonSizes[size][0],
+        appearances[appearance][0],
+        appearances[appearance][1][status],
+        "transition items-center justify-center border font-medium focus:outline-none focus:ring-2 focus:ring-primary-300"
+      )}
     >
       {status === "loading" ? (
         <AiOutlineLoading3Quarters
-          className={`${buttonSizes[size][1]["leftIcon"]} animate-spin`}
+          className={classNames(
+            buttonSizes[size][1]["leftIcon"],
+            "animate-spin"
+          )}
         />
       ) : LeftIcon ? (
         <LeftIcon className={buttonSizes[size][1]["leftIcon"]} />

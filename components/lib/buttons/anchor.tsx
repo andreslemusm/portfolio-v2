@@ -27,12 +27,12 @@ const Anchor = forwardRef(
       <a
         ref={ref}
         className={classNames(
-          "transition-colors items-center justify-center border font-medium focus:outline-none focus:ring-2 focus:ring-green-300",
           block ? "flex w-full" : "inline-flex",
           rounded ? "rounded-full" : "rounded-sm",
           buttonSizes[size][0],
           appearances[appearance][0],
-          appearances[appearance][1]["default"]
+          appearances[appearance][1]["default"],
+          "transition items-center justify-center border font-medium focus:outline-none focus:ring-2 focus:ring-green-300"
         )}
       >
         {LeftIcon ? (

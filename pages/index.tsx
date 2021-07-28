@@ -18,9 +18,9 @@ const Home = () => {
         I&apos;m <span className="text-green-300">Andres</span>.
       </h1>
       <p className="mt-3 font-semibold text-gray-300 text-3xl md:text-4xl lg:text-5xl">
-        Frontend Engineer in Colombia 🇨🇴
+        Frontend Engineer in Colombia 🇨🇴.
       </p>
-      <p className="mt-5 text-gray-400">
+      <p className="mt-5 text-gray-400 prose">
         My awesome description Lorem ipsum, dolor sit amet consectetur
         adipisicing elit. Animi consectetur nesciunt iste et accusamus est
         corrupti vitae voluptas incidunt deserunt sit, quaerat laborum odio?
