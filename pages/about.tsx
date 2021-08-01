@@ -15,10 +15,11 @@ const About = () => (
       <title>Andres Lemus | About</title>
     </Head>
     <h1 className="mt-10 text-5xl font-bold tracking-tighter">
-      Hi, I&apos;m Andres.
+      Hi, I&apos;m Andres 👋
     </h1>
     <p className="mt-6 text-lg">
-      I&apos;m a full time front-end engineer. I was born in{" "}
+      I&apos;m a Front-end engineer. I was born in 1998 (you can do the math)
+      and and grew up in the city of Montería,{" "}
       <a href="https://www.colombia.travel/en" className="group">
         <span className="transition-colors text-yellow-300 group-hover:text-yellow-400">
           Co
@@ -29,8 +30,8 @@ const About = () => (
         <span className="transition-colors text-red-500 group-hover:text-red-600">
           bia
         </span>
-      </a>{" "}
-      and grew up in the city of Monteria 🐮.
+      </a>
+      .
     </p>
     <section className="mt-32 grid gap-y-20 md:grid-cols-2 md:gap-x-12 lg:gap-x-44">
       <article className="prose prose-lg">
@@ -72,9 +73,9 @@ const About = () => (
           My advice if you&apos;re having the same difficulties is to take{" "}
           <a href="https://www.coursera.org/learn/learning-how-to-learn">
             this course
-          </a>{" "}
-          (is freemium! 🥳). It&apos;ll give you powerful tools to improve your
-          learning ability.
+          </a>
+          . It&apos;ll give you powerful tools to improve your learning ability,
+          and the best thing, is freemium! 🥳.
         </p>
       </article>
       <article className="prose prose-lg">
