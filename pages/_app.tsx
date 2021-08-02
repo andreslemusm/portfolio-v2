@@ -14,7 +14,9 @@ import { SocialNetworks } from "@utils/constants";
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
-const navItems = ["home", "about", "blog"];
+const myMail = "mailto:aclmadrid04@gmail.com";
+
+const navItems = ["home", "blog", "about"];
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -286,6 +288,12 @@ const App = ({ Component, pageProps }: AppProps) => {
                       <a>{item}</a>
                     </NavLink>
                   ))}
+                  <a
+                    href={myMail}
+                    className="transition block px-2 py-2 text-sm font-medium rounded-md text-green-300 hover:text-green-400 hover:bg-green-300 hover:bg-opacity-5"
+                  >
+                    Contact
+                  </a>
                 </div>
               </div>
             </Popover.Panel>
@@ -303,9 +311,12 @@ const App = ({ Component, pageProps }: AppProps) => {
               <a>{navItem}</a>
             </NavLink>
           ))}
-          <Anchor href="/contact" appearance="primary">
-            Contact
-          </Anchor>
+          <a
+            href={myMail}
+            className="transition font-medium rounded-sm text-sm px-3 py-2 text-green-300 border border-green-300 hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-300"
+          >
+            Get in touch
+          </a>
         </div>
       </header>
 

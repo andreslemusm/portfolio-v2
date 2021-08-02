@@ -19,7 +19,7 @@ const About = () => (
     </h1>
     <p className="mt-6 text-lg">
       I&apos;m a Front-end engineer. I was born in 1998 (you can do the math)
-      and and grew up in the city of Montería,{" "}
+      and grew up in the city of Montería,{" "}
       <a href="https://www.colombia.travel/en" className="group">
         <span className="transition-colors text-yellow-300 group-hover:text-yellow-400">
           Co

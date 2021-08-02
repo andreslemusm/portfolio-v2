@@ -1,6 +1,6 @@
 const appearances = {
   primary: [
-    "border-green-300 text-green-300 bg-transparent shadow-sm",
+    "border-green-300 text-green-300 bg-transparent",
     {
       default: "hover:bg-green-800",
       loading: "opacity-70 cursor-default",
