@@ -9,7 +9,42 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
+        {/* <!-- Primary Meta Tags --> */}
         <title>Andres Lemus</title>
+        <meta
+          name="title"
+          content="Hi, I'm Andres Lemus. I build things with React."
+        />
+        <meta
+          name="description"
+          content="Come check out Andres Lemus' home on the internet."
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://andreslemus.dev/" />
+        <meta
+          property="og:title"
+          content="Hi, I'm Andres Lemus. I build things with React."
+        />
+        <meta
+          property="og:description"
+          content="Come check out Andres Lemus' home on the internet."
+        />
+        <meta property="og:image" content="/preview.png" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://andreslemus.dev/" />
+        <meta
+          property="twitter:title"
+          content="Hi, I'm Andres Lemus. I build things with React."
+        />
+        <meta
+          property="twitter:description"
+          content="Come check out Andres Lemus' home on the internet."
+        />
+        <meta property="twitter:image" content="/preview.png" />
       </Head>
       <div className="mt-10 h-16 w-16 rounded-full overflow-hidden">
         <Image src={profilePicture} alt="Andres Lemus at Monserrate" />

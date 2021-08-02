@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <div className="container mx-auto px-5">
       <header className="flex justify-between items-center py-10">
         <Link href="/" passHref>
-          <a className="relative">
+          <a className="relative" aria-label="Home">
             <Brand className="relative z-10 text-[#1092ba] mix-blend-difference h-14 w-14 md:h-20 md:w-20" />
 
             {/* Gradient animation */}
@@ -329,13 +329,25 @@ const App = ({ Component, pageProps }: AppProps) => {
           © {new Date().getFullYear()} Andres Lemus. All rights reserved.
         </p>
         <div className="flex gap-x-5 order-first md:order-last">
-          <a href={SocialNetworks.twitter} className="hover:text-green-300">
+          <a
+            href={SocialNetworks.twitter}
+            className="hover:text-green-300"
+            aria-label="Andres Lemus's Twitter"
+          >
             <AiOutlineTwitter className="h-6 w-6" />
           </a>
-          <a href={SocialNetworks.github} className="hover:text-green-300">
+          <a
+            href={SocialNetworks.github}
+            className="hover:text-green-300"
+            aria-label="Andres Lemus's GitHub"
+          >
             <AiOutlineGithub className="h-6 w-6 " />
           </a>
-          <a href={SocialNetworks.linkedin} className="hover:text-green-300">
+          <a
+            href={SocialNetworks.linkedin}
+            className="hover:text-green-300"
+            aria-label="Andres Lemus's LinkedIn"
+          >
             <AiFillLinkedin className="h-6 w-6" />
           </a>
         </div>

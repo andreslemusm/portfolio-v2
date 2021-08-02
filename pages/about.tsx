@@ -12,7 +12,24 @@ import {
 const About = () => (
   <Fragment>
     <Head>
-      <title>Andres Lemus | About</title>
+      {/* <!-- Primary Meta Tags --> */}
+      <title>About | Andres Lemus</title>
+      <meta name="title" content="About | Andres Lemus" />
+      <meta name="description" content="All about Andres Lemus" />
+
+      {/* <!-- Open Graph / Facebook --> */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://andreslemus.dev/about" />
+      <meta property="og:title" content="About | Andres Lemus" />
+      <meta property="og:description" content="All about Andres Lemus" />
+      <meta property="og:image" content="/preview.png" />
+
+      {/* <!-- Twitter --> */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://andreslemus.dev/about" />
+      <meta property="twitter:title" content="About | Andres Lemus" />
+      <meta property="twitter:description" content="All about Andres Lemus" />
+      <meta property="twitter:image" content="/preview.png" />
     </Head>
     <h1 className="mt-10 text-5xl font-bold tracking-tighter">
       Hi, I&apos;m Andres 👋
