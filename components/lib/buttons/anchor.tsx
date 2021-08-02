@@ -32,7 +32,7 @@ const Anchor = forwardRef(
           buttonSizes[size][0],
           appearances[appearance][0],
           appearances[appearance][1]["default"],
-          "transition items-center justify-center border font-medium focus:outline-none focus:ring-2 focus:ring-green-300"
+          "transition items-center justify-center border focus:outline-none focus:ring-2 focus:ring-green-300"
         )}
       >
         {LeftIcon ? (

@@ -36,7 +36,7 @@ const Button = forwardRef(
         buttonSizes[size][0],
         appearances[appearance][0],
         appearances[appearance][1][status],
-        "transition items-center justify-center border font-medium focus:outline-none focus:ring-2 focus:ring-primary-300"
+        "transition items-center justify-center border focus:outline-none focus:ring-2 focus:ring-primary-300"
       )}
     >
       {status === "loading" ? (
