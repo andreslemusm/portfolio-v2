@@ -1,4 +1,3 @@
-import reactLogo from "@assets/react.svg";
 import profilePicture from "@assets/profile-picture.jpg";
 import Head from "next/head";
 import Image from "next/image";
@@ -31,7 +30,10 @@ const Home = () => {
           property="og:description"
           content="Come check out Andres Lemus' home on the internet."
         />
-        <meta property="og:image" content="/preview.png" />
+        <meta
+          property="og:image"
+          content="https://andreslemus.dev/preview.png"
+        />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -44,7 +46,10 @@ const Home = () => {
           property="twitter:description"
           content="Come check out Andres Lemus' home on the internet."
         />
-        <meta property="twitter:image" content="/preview.png" />
+        <meta
+          property="twitter:image"
+          content="https://andreslemus.dev/preview.png"
+        />
       </Head>
       <div className="mt-10 h-16 w-16 rounded-full overflow-hidden">
         <Image src={profilePicture} alt="Andres Lemus at Monserrate" />

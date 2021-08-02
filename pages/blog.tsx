@@ -17,7 +17,7 @@ const Blog = () => (
         property="og:description"
         content="Search Andres Lemus blog posts"
       />
-      <meta property="og:image" content="/preview.png" />
+      <meta property="og:image" content="https://andreslemus.dev/preview.png" />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -27,7 +27,10 @@ const Blog = () => (
         property="twitter:description"
         content="Search Andres Lemus blog posts"
       />
-      <meta property="twitter:image" content="/preview.png" />
+      <meta
+        property="twitter:image"
+        content="https://andreslemus.dev/preview.png"
+      />
     </Head>
     <h1 className="text-7xl font-bold uppercase text-center text-green-300">
       Blog
