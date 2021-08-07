@@ -52,9 +52,15 @@ const Home = () => {
         />
       </Head>
       <div className="mt-10 h-16 w-16 rounded-full overflow-hidden">
-        <Image src={profilePicture} alt="Andres Lemus at Monserrate" />
+        <Image
+          src={profilePicture}
+          alt="Andres Lemus at Monserrate"
+          placeholder="blur"
+          height={64}
+          width={64}
+          priority
+        />
       </div>
-
       <article className="pt-5">
         <h1 className="pl-1 font-normal text-green-300 md:text-lg">
           Hi, my name is
