@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Fragment } from "react";
-import { Layout } from "@components/lib/layout";
+import { Layout } from "@components/layout";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

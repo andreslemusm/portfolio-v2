@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Brand } from "@assets/index";
 import { IconButton } from "@components/lib/buttons";
-import { NavLink } from "@components/lib/nav-link";
+import { NavLink } from "@components/nav-link";
 import {
   AiFillLinkedin,
   AiOutlineGithub,
