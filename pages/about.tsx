@@ -34,7 +34,7 @@ const About = () => (
         content="https://andreslemus.dev/preview.png"
       />
     </Head>
-    <h1 className="mt-10 text-5xl font-bold tracking-tighter">
+    <h1 className="mt-10 text-5xl text-white font-bold tracking-tighter">
       Hi, I&apos;m Andres 👋
     </h1>
     <p className="mt-6 text-lg">

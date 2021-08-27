@@ -65,7 +65,7 @@ const Home = () => {
         <h1 className="pl-1 font-normal text-green-300 md:text-lg">
           Hi, my name is
         </h1>
-        <h2 className="pt-5 font-semibold text-4xl md:text-5xl lg:text-6xl">
+        <h2 className="pt-5 font-semibold text-white text-4xl md:text-5xl lg:text-6xl">
           Andres Lemus.
         </h2>
         <h3 className="pt-2 text-gray-400 font-semibold text-4xl md:text-5xl md:pt-3 lg:text-6xl">
