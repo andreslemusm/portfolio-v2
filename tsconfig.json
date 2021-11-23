@@ -20,7 +20,8 @@
       "@utils/*": ["utils/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"]
-    }
+    },
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

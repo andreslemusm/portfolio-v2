@@ -26,7 +26,6 @@ export const Layout = ({ children }: LayoutProps) => (
       <Link href="/" passHref>
         <a className="relative" aria-label="Home">
           <Brand className="relative z-10 text-[#1092ba] mix-blend-difference h-14 w-14 md:h-20 md:w-20" />
-
           {/* Gradient animation */}
           <div className="absolute z-0 inset-0">
             <svg
@@ -249,7 +248,6 @@ export const Layout = ({ children }: LayoutProps) => (
             size="lg"
           />
         </Popover.Button>
-
         <Transition
           as={Fragment}
           enter="duration-150 ease-out"
