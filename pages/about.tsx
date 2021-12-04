@@ -107,7 +107,7 @@ const About = () => (
           <a href="https://www.leangroup.com/solutions/leantech">Lean Tech</a>.
           I&apos;ve been developing websites from{" "}
           <a href="https://fithub.com.co/">e-commerce sites</a> to{" "}
-          <a href="https://efficiency-test.lean-tech.io/">web applications</a>{" "}
+          <a href="https://v2.ottomotoapp.com/">web applications</a>{" "}
           for more than 1 year.
         </p>
         <p>
